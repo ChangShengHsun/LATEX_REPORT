@@ -1,0 +1,317 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+% Language and font packages
+\usepackage{ctex} % Chinese support
+
+% Pseudocode and algorithm packages
+\usepackage{algorithm2e} % Advanced algorithm writing
+\usepackage{algpseudocode} % Pseudocode environment for algorithms
+
+% Fancy style packages
+\usepackage{fancyhdr} % Custom headers/footers
+\usepackage{color} % Color support
+\usepackage{xcolor} % Extended color support
+\usepackage{tcolorbox} % Colored boxes
+\usepackage{framed} % Framed environments
+
+% Math and symbol packages
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Table and figure packages
+\usepackage{booktabs} % Professional tables
+\usepackage{multirow} % Multi-row tables
+\usepackage{caption} % Custom captions
+\usepackage{subcaption} % Subfigures
+
+% Miscellaneous
+\usepackage{enumitem} % Custom lists
+\usepackage{listings} % Code listings
+\usepackage{tikz} % Drawing diagrams
+\usepackage{pgfplots} % For plotting graphs
+
+\title{I have bags. Too many bags......}
+\author{B13901165 Ivan Chang}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+In the textbook, we all have been forced to get familiar with the 0/1 knapsack problem.
+So, why not solve a little more similar questions?
+Here I prepare some related problems for you to practice.
+For each problem, you are required to design the 
+\begin{enumerate}
+    \item DP transfer function
+    \item algorithm (pseudocode)
+    \item time complexity analysis
+\end{enumerate}
+
+\end{abstract}
+
+\section{Unbounded Knapsack Problem}
+\subsection*{Description}
+You are given $k$ types of items. Each type $i$ has weight $w_i$ and value $v_i$,
+and you may take unlimited copies of each item.
+Find the maximum total value without exceeding capacity $W$.
+
+\subsection*{Input Format}
+\begin{verbatim}
+k W
+w1 v1
+w2 v2
+...
+wk vk
+\end{verbatim}
+
+\subsection*{DP transfer function}
+In the unbounded knapsack problem, which is actually Q9.(d) in the HW2, 
+we use a 1-D array $memo[0..W]$ where $memo[j]$ represents the maximum value within capacity $j$.
+for each capacity $j$, we have to iterate through all $k$ items to find the optimal solution.
+The transfer function is:
+\[
+memo[j] = \max_{1 \leq i \leq k}(memo[j], memo[j - w_i] + v_i)
+\]
+
+\subsection*{Pseudocode}
+\subsection*{Top-Down Recursive Algorithm}
+\begin{algorithm}[H]
+\caption{Top-Down Unbounded Knapsack}
+\KwIn{$k, W, w[1..k], v[1..k]$}
+\KwOut{Maximum total value}
+Initialize all $memo[w] = -\infty$\;
+\SetKwFunction{F}{Knapsack}
+\SetKwProg{Fn}{Function}{:}{}
+\Fn{\F{$w$}}{
+    \If{$w = 0$}{
+        \Return{$0$}\;
+    }
+    \If{$\text{memo}[w] \neq -\infty$}{
+        \Return{$\text{memo}[w]$}\;
+    }
+
+    % try every item as a choice
+    \For{$i \gets 1$ \KwTo{} $k$}{
+        \If{$w_i \le w$}{
+            $\text{memo}[w] \gets \max\big(\text{memo}[w],\ \text{\F}(w - w_i) + v_i\big)$\;
+        }
+    }
+
+    \Return{$\text{memo}[w]$}\;
+}
+
+\Return{\text{\F}(k, W)}\;
+\end{algorithm}
+
+\subsection*{Time Complexity}
+for time complexity, we have to iterate through all $W$ capacities,
+and for each capacity, we iterate through all $k$ items.
+Thus, the time complexity is:\[O(kW)\]
+for space complexity, since we use a 1-D array $memo[0..W]$,
+the space complexity is:\[O(W)\]
+
+% ============================================
+\section{Bounded Knapsack Problem}
+\subsection*{Description}
+You are given $k$ types of items.  
+Each type $i$ has weight $w_i$, value $v_i$, and at most $n_i$ copies.  
+Find the maximum total value achievable within capacity $W$.
+\subsection*{Input Format}
+\begin{verbatim}
+k W
+w1 v1 n1
+w2 v2 n2
+...
+wk vk nk
+\end{verbatim}
+\subsection*{Idea}
+This is the \textbf{bounded knapsack} problem.  
+A naive approach is to expand all the item, and it would reduce to the 0/1 knapsack problem.
+However, the time complexity would be $O(W \sum n_i)$.
+To avoid expanding all $n_i$ copies, we can use \textbf{binary decomposition}:
+split $n_i$ into the powers of 2.
+
+\subsection{DP transfer function}
+the transfer function is similar to the 0/1 knapsack problem:
+however, we first need to do the binary decomposition to create new items.
+Then, we can apply the 0/1 knapsack DP transfer function:
+\[
+dp[i][w] = \max(dp[i-1][w], dp[i-1][w - weight[i]] + value[i])
+\]
+\subsection*{Pseudocode}
+\begin{algorithm}[H]
+\caption{Bounded Knapsack using Binary Decomposition + 0/1 DP}
+\KwIn{Capacity $W$; $k$ item types with weight $w[1..k]$, value $v[1..k]$, count $n[1..k]$}
+\KwOut{Maximum total value achievable}
+
+\BlankLine
+Initialize an empty list \texttt{newItems}\;
+\For{$i \gets 1$ \KwTo $k$}{
+    $count \gets n[i]$, \quad $base \gets 1$\;
+    \While{$count > 0$}{
+        $take \gets \min(base, count)$\;
+        Append item $(take \times w[i],\ take \times v[i])$ to \texttt{newItems}\;
+        $count \gets count - take$\;
+        $base \gets base \times 2$\;
+    }
+}
+\BlankLine
+//do the 0/1 knapsack on newItems\;
+\Return $dp[W]$\;
+\end{algorithm}
+
+
+\subsection*{Time Complexity}
+This is actually like the 0/1 knapsack problem, but with $\sum_{i=1}^k \log n_i$ items after binary decomposition.
+Thus, the time complexity is:
+\[O\left(W \sum_{i=1}^k \log n_i\right)\]
+
+% ============================================
+\section{Two-Knapsack Problem}
+\subsection*{Description}
+There are $M=2$ knapsacks, with capacities $W_1$ and $W_2$.  
+You have $k$ items, each with weight $w_i$ and value $v_i$.  
+Each item can be placed in \textbf{at most one} knapsack.
+\subsection{Input Format}
+\begin{verbatim}
+k W1 W2
+w1 v1
+w2 v2
+...
+wk vk
+\end{verbatim}
+\subsection{DP transfer function}
+for each item, we have three choices:
+\begin{enumerate}
+    \item not take the item
+    \item put the item in the first bag
+    \item put the item in the second bag
+\end{enumerate}
+therefore, we can build a 3-D DP array $memo[i][c1][c2]$ where \\
+$i$ is the number of items, \\
+$c1$ is the capacity left in the first knapsack, \\
+$c2$ is the capacity left in the second knapsack.\\
+the transfer function would be:
+\[
+memo[i][c1][c2] = \max(memo[i-1][c1][c2],\ memo[i-1][c1-w[i]][c2] + v[i],\ memo[i-1][c1][c2-w[i]] + v[i])
+\]
+\subsection*{Pseudocode}
+\begin{algorithm}[H]
+\caption{Top-Down Two-Knapsack with Memoization}
+\KwIn{item count $k$; capacities $C_1, C_2$; weights $w[1..k]$; values $v[1..k]$}
+\KwOut{maximum total value}
+\SetKwFunction{KS}{DP}
+\SetKwProg{Fn}{Function}{:}{}
+
+\textbf{State:} $\text{memo}[0..k][0..C_1][0..C_2] \leftarrow -\infty$;
+
+\Fn{\KS{$i, c_1, c_2$}}{
+    \If{$i = 0$}{\Return $0$}
+    
+    \If{$\text{memo}[i][c_1][c_2] \neq -\infty$}{\Return $\text{memo}[i][c_1][c_2]$}
+
+    % don't take item i
+    $best \leftarrow$ \KS{$i-1,\, c_1,\, c_2$}\;
+
+    % put item i into knapsack 1 (if fits)
+    $best \leftarrow \max\Big(best,\ \KS(i-1,\, c_1 - w[i],\, c_2) + v[i]\Big)$\;
+
+    $best \leftarrow \max\Big(best,\ \KS(i-1,\, c_1,\, c_2 - w[i]) + v[i]\Big)$\;
+
+    $\text{memo}[i][c_1][c_2] = best$\;
+    \Return{$\text{memo}[i][c_1][c_2]$}\;
+}
+\Return{\KS{$k, C_1, C_2$}}\;
+\end{algorithm}
+
+
+\subsection*{Time Complexity}
+Since the size of the memo table is $k \times C_1 \times C_2$
+the time complexity is:
+\[O(k \times C_1 \times C_2)\]
+
+% ============================================
+\section{Group Knapsack Problem}
+\subsection*{Description}
+There are $G$ groups of items.  
+Group $i$ has $t_i$ items, and each item $j$ in this group has weight $w_{ij}$ and value $v_{ij}$.  
+You can choose \textbf{at most one} item from each group.
+\subsection{Input Format}
+\begin{verbatim}
+G W
+t_1
+w_{11} v_{11}
+w_{12} v_{12}
+...
+w_{1t_1} v_{1t_1}
+t_2
+w_{21} v_{21}
+...
+w_{2t_2} v_{2t_2}
+...
+t_G
+w_{G1} v_{G1}
+...
+w_{Gt_G} v_{Gt_G}
+\end{verbatim}
+\subsection{DP transfer function}
+for each group $i$, we have $t_i + 1$ choices:
+\begin{enumerate}
+    \item not take any item from group $i$
+    \item take item $j$ from group $i$ (for each $j \in [1, t_i]$)
+\end{enumerate}
+therefore, we can use a 2-D DP array $memo[1...G][0..W]$ to store the maximum achievable value//
+the transfer function would be:
+\[
+dp[i][w] = \max_{1 \leq j \leq t_i}(dp[i-1][w], dp[i-1][w - w_{ij}] + v_{ij})
+\]
+\subsection*{Pseudocode}
+\begin{algorithm}[H]
+\caption{Top-Down Group Knapsack with Memoization}
+\KwIn{Number of groups $G$; capacity $W$; each group $i$ has $t_i$ items $(w_{ij}, v_{ij})$}
+\KwOut{Maximum total value achievable}
+\SetKwFunction{GK}{Solve}
+\SetKwProg{Fn}{Function}{:}{}
+
+\textbf{State:} $\text{memo}[0..G][0..W] = -\infty$\;
+
+\Fn{\GK{$i, w$}}{
+    \If{$i = 0$}{\Return{0}\;}
+    \If{$\text{memo}[i][w] \neq -\infty$}{\Return{\text{memo}[i][w]}\;}
+
+    $best \gets$ \GK{$i-1, w$}\;
+
+    \For{$j \gets 1$ \KwTo $t_i$}{
+        \If{$w_{ij} \leq w$}{
+            $best \gets \max\big(best,\, \GK(i-1, w - w_{ij}) + v_{ij}\big)$\;
+        }
+    }
+
+    $\text{memo}[i][w] \gets best$\;
+    \Return{\text{memo}[i][w]}\;
+}
+
+\Return{\GK{$G, W$}}\;
+\end{algorithm}
+
+\subsection*{Time Complexity}
+the size of the memo table is $G \times W$,
+and for each state, we iterate through all $t_i$ items in group $i$
+therefore, the time complexity is:
+\[
+O\left(W \sum_{i=1}^{G} t_i\right)
+\]
+
+% ============================================
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,849 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.12)  13 OCT 2025 18:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(student.sty
+Package: student 16/02/2022 v1.0 custom anu student assignment stylefile
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbo
+x.sty
+Package: tcolorbox 2025/09/09 version 6.8.0 text color boxes
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\
+tikz.sty
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf
+.sty
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfr
+cs.sty
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+futil-common.tex
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen149
+\pgfutil@tempdimb=\dimen150
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+futil-latex.def
+\pgfutil@abb=\box53
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+frcs.code.tex
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision
+.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf
+core.sty
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.
+sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.st
+y
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.
+sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graph
+ics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdfte
+x.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pg
+fsys.sty
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+fkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+fkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks21
+))
+\pgf@x=\dimen153
+\pgf@y=\dimen154
+\pgf@xa=\dimen155
+\pgf@ya=\dimen156
+\pgf@xb=\dimen157
+\pgf@yb=\dimen158
+\pgf@xc=\dimen159
+\pgf@yc=\dimen160
+\pgf@xd=\dimen161
+\pgf@yd=\dimen162
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count283
+\c@pgf@countb=\count284
+\c@pgf@countc=\count285
+\c@pgf@countd=\count286
+\t@pgf@toka=\toks22
+\t@pgf@tokb=\toks23
+\t@pgf@tokc=\toks24
+\pgf@sys@id@count=\count287
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count288
+\pgfsyssoftpath@bigbuffer@items=\count289
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\
+pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color
+.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor
+.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+.code.tex
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+util.code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+parser.code.tex
+\pgfmath@dimen=\dimen163
+\pgfmath@count=\count290
+\pgfmath@box=\box54
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.basic.code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.trigonometric.code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.random.code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.comparison.code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.base.code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.round.code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.misc.code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+functions.integerarithmetics.code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+calc.code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+float.code.tex
+\c@pgfmathroundto@lastzeros=\count291
+))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.
+code.tex)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen164
+\pgf@picmaxx=\dimen165
+\pgf@picminy=\dimen166
+\pgf@picmaxy=\dimen167
+\pgf@pathminx=\dimen168
+\pgf@pathmaxx=\dimen169
+\pgf@pathminy=\dimen170
+\pgf@pathmaxy=\dimen171
+\pgf@xx=\dimen172
+\pgf@xy=\dimen173
+\pgf@yx=\dimen174
+\pgf@yy=\dimen175
+\pgf@zx=\dimen176
+\pgf@zy=\dimen177
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen178
+\pgf@path@lasty=\dimen179
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen180
+\pgf@shorten@start@additional=\dimen181
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box55
+\pgf@hbox=\box56
+\pgf@layerbox@main=\box57
+\pgf@picture@serial@count=\count292
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen182
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen183
+\pgf@pt@y=\dimen184
+\pgf@pt@temp=\dimen185
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen186
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen187
+\pgf@sys@shading@range@num=\count293
+\pgf@shadingcount=\count294
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box58
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\p
+gfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfm
+oduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box59
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfm
+oduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\
+pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen188
+\pgf@nodesepend=\dimen189
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\
+pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgff
+or.sty
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfk
+eys.sty
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+fkeys.code.tex))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.s
+ty
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath
+.code.tex))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pg
+ffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen190
+\pgffor@skip=\dimen191
+\pgffor@stack=\toks28
+\pgffor@toks=\toks29
+))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlaye
+r/tikz\tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pg
+flibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count295
+\pgfplotmarksize=\dimen192
+)
+\tikz@lastx=\dimen193
+\tikz@lasty=\dimen194
+\tikz@lastxsaved=\dimen195
+\tikz@lastysaved=\dimen196
+\tikz@lastmovetox=\dimen197
+\tikz@lastmovetoy=\dimen198
+\tikzleveldistance=\dimen199
+\tikzsiblingdistance=\dimen256
+\tikz@figbox=\box60
+\tikz@figbox@bg=\box61
+\tikz@tempbox=\box62
+\tikz@tempbox@bg=\box63
+\tikztreelevel=\count296
+\tikznumberofchildren=\count297
+\tikznumberofcurrentchild=\count298
+\tikz@fig@count=\count299
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfm
+odulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count300
+\pgfmatrixcurrentcolumn=\count301
+\pgf@matrix@numberofcolumns=\count302
+)
+\tikz@expandcount=\count303
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlaye
+r/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks30
+\verbatim@line=\toks31
+\verbatim@in@stream=\read3
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.st
+y
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspa
+ces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks32
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.
+sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count304
+)
+\tcb@titlebox=\box64
+\tcb@upperbox=\box65
+\tcb@lowerbox=\box66
+\tcb@phantombox=\box67
+\c@tcbbreakpart=\count305
+\c@tcblayer=\count306
+\c@tcolorbox@number=\count307
+\l__tcobox_tmpa_box=\box68
+\l__tcobox_tmpa_dim=\dimen257
+\tcb@temp=\box69
+\tcb@temp=\box70
+\tcb@temp=\box71
+\tcb@temp=\box72
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.
+sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoption
+s.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.
+sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkey
+s.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\
+xparse.sty
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-09-02 L3 programming layer (loader) 
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backen
+d-pdftex.def
+File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count308
+))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.
+sty
+Package: zref-abspage 2025-06-08 v2.36 Module abspage for zref (HO)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
+Package: zref-base 2025-06-08 v2.36 Module base for zref (HO)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwar
+err.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvd
+efinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdfte
+xcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmd
+s.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.st
+y
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count309
+Package zref Info: New property: abspage on input line 67.
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspac
+e.sty
+Package: needspace 2025/03/13 v1.3e reserve vertical space
+)
+\mdf@templength=\skip51
+\c@mdf@globalstyle@cnt=\count310
+\mdf@skipabove@length=\skip52
+\mdf@skipbelow@length=\skip53
+\mdf@leftmargin@length=\skip54
+\mdf@rightmargin@length=\skip55
+\mdf@innerleftmargin@length=\skip56
+\mdf@innerrightmargin@length=\skip57
+\mdf@innertopmargin@length=\skip58
+\mdf@innerbottommargin@length=\skip59
+\mdf@splittopskip@length=\skip60
+\mdf@splitbottomskip@length=\skip61
+\mdf@outermargin@length=\skip62
+\mdf@innermargin@length=\skip63
+\mdf@linewidth@length=\skip64
+\mdf@innerlinewidth@length=\skip65
+\mdf@middlelinewidth@length=\skip66
+\mdf@outerlinewidth@length=\skip67
+\mdf@roundcorner@length=\skip68
+\mdf@footenotedistance@length=\skip69
+\mdf@userdefinedwidth@length=\skip70
+\mdf@needspace@length=\skip71
+\mdf@frametitleaboveskip@length=\skip72
+\mdf@frametitlebelowskip@length=\skip73
+\mdf@frametitlerulewidth@length=\skip74
+\mdf@frametitleleftmargin@length=\skip75
+\mdf@frametitlerightmargin@length=\skip76
+\mdf@shadowsize@length=\skip77
+\mdf@extratopheight@length=\skip78
+\mdf@subtitleabovelinewidth@length=\skip79
+\mdf@subtitlebelowlinewidth@length=\skip80
+\mdf@subtitleaboveskip@length=\skip81
+\mdf@subtitlebelowskip@length=\skip82
+\mdf@subtitleinneraboveskip@length=\skip83
+\mdf@subtitleinnerbelowskip@length=\skip84
+\mdf@subsubtitleabovelinewidth@length=\skip85
+\mdf@subsubtitlebelowlinewidth@length=\skip86
+\mdf@subsubtitleaboveskip@length=\skip87
+\mdf@subsubtitlebelowskip@length=\skip88
+\mdf@subsubtitleinneraboveskip@length=\skip89
+\mdf@subsubtitleinnerbelowskip@length=\skip90
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-frame-
+0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box73
+\mdf@footnotebox=\box74
+\mdf@splitbox@one=\box75
+\mdf@splitbox@two=\box76
+\mdf@splitbox@save=\box77
+\mdfsplitboxwidth=\skip91
+\mdfsplitboxtotalwidth=\skip92
+\mdfsplitboxheight=\skip93
+\mdfsplitboxdepth=\skip94
+\mdfsplitboxtotalheight=\skip95
+\mdfframetitleboxwidth=\skip96
+\mdfframetitleboxtotalwidth=\skip97
+\mdfframetitleboxheight=\skip98
+\mdfframetitleboxdepth=\skip99
+\mdfframetitleboxtotalheight=\skip100
+\mdffootnoteboxwidth=\skip101
+\mdffootnoteboxtotalwidth=\skip102
+\mdffootnoteboxheight=\skip103
+\mdffootnoteboxdepth=\skip104
+\mdffootnoteboxtotalheight=\skip105
+\mdftotallinewidth=\skip106
+\mdfboundingboxwidth=\skip107
+\mdfboundingboxtotalwidth=\skip108
+\mdfboundingboxheight=\skip109
+\mdfboundingboxdepth=\skip110
+\mdfboundingboxtotalheight=\skip111
+\mdf@freevspace@length=\skip112
+\mdf@horizontalwidthofbox@length=\skip113
+\mdf@verticalmarginwhole@length=\skip114
+\mdf@horizontalspaceofbox=\skip115
+\mdfsubtitleheight=\skip116
+\mdfsubsubtitleheight=\skip117
+\c@mdfcountframes=\count311
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count312
+\c@mdf@env@i=\count313
+\c@mdf@env@ii=\count314
+\c@mdf@zref@counter=\count315
+Package zref Info: New property: mdf@pagevalue on input line 895.
+))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count316
+\float@exts=\toks33
+\float@box=\box78
+\@float@everytoks=\toks34
+\@floatcapt=\box79
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.st
+y
+Package: amsmath 2025/06/16 v2.17y AMS math features
+\@mathmargin=\skip118
+
+For additional information on amsmath, use the `?' option.
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.st
+y
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks35
+\ex@=\dimen258
+))
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen259
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count317
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count318
+\leftroot@=\count319
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count320
+\DOTSCASE@=\count321
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box80
+\strutbox@=\box81
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen260
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count322
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count323
+\dotsspace@=\muskip17
+\c@parentequation=\count324
+\dspbrk@lvl=\count325
+\tag@help=\toks36
+\row@=\count326
+\column@=\count327
+\maxfields@=\count328
+\andhelp@=\toks37
+\eqnshift@=\dimen261
+\alignsep@=\dimen262
+\tagshift@=\dimen263
+\tagwidth@=\dimen264
+\totwidth@=\dimen265
+\lineht@=\dimen266
+\@envbody=\toks38
+\multlinegap=\skip119
+\multlinetaggap=\skip120
+\mathdisplay@stack=\toks39
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.s
+ty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.
+sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+) (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-p
+df.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count329
+\scratchdimen=\dimen267
+\scratchbox=\box82
+\nofMPsegments=\count330
+\nofMParguments=\count331
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen268
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
+\everyMPtoPDFconversion=\toks41
+)
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epsto
+pdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-
+sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+<Myimages/prediction_bias.png, id=4, 602.25pt x 301.125pt>
+File: Myimages/prediction_bias.png Graphic file (type png)
+<use Myimages/prediction_bias.png>
+Package pdftex.def Info: Myimages/prediction_bias.png  used on input line 57.
+(pdftex.def)             Requested size: 217.22205pt x 108.61168pt.
+<Myimages/prediction_variance.png, id=6, 602.25pt x 301.125pt>
+File: Myimages/prediction_variance.png Graphic file (type png)
+<use Myimages/prediction_variance.png>
+Package pdftex.def Info: Myimages/prediction_variance.png  used on input line 6
+4.
+(pdftex.def)             Requested size: 217.22205pt x 108.61168pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+
+
+(C:\Users\ivan_chang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+[1
+
+{C:/Users/ivan_chang/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Myima
+ges/prediction_bias.png> <./Myimages/prediction_variance.png>]
+<Myimages/montecarlo_return.png, id=16, 3806.22pt x 1999.47pt>
+File: Myimages/montecarlo_return.png Graphic file (type png)
+<use Myimages/montecarlo_return.png>
+Package pdftex.def Info: Myimages/montecarlo_return.png  used on input line 89.
+
+(pdftex.def)             Requested size: 217.22205pt x 114.10521pt.
+<Myimages/sarsa_return.png, id=17, 3806.22pt x 1999.47pt>
+File: Myimages/sarsa_return.png Graphic file (type png)
+<use Myimages/sarsa_return.png>
+Package pdftex.def Info: Myimages/sarsa_return.png  used on input line 95.
+(pdftex.def)             Requested size: 217.22205pt x 114.10521pt.
+<Myimages/qlearning_return.png, id=18, 3806.22pt x 1999.47pt>
+File: Myimages/qlearning_return.png Graphic file (type png)
+<use Myimages/qlearning_return.png>
+Package pdftex.def Info: Myimages/qlearning_return.png  used on input line 101.
+
+(pdftex.def)             Requested size: 217.22205pt x 114.10521pt.
+<Myimages/return_between_methods.png, id=19, 3806.22pt x 1999.47pt>
+File: Myimages/return_between_methods.png Graphic file (type png)
+<use Myimages/return_between_methods.png>
+Package pdftex.def Info: Myimages/return_between_methods.png  used on input lin
+e 107.
+(pdftex.def)             Requested size: 217.22205pt x 114.10521pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+
+
+[2 <./Myimages/montecarlo_return.png> <./Myimages/sarsa_return.png> <./Myimages
+/qlearning_return.png>]
+<Myimages/montecarlo_loss.png, id=27, 3806.22pt x 1999.47pt>
+File: Myimages/montecarlo_loss.png Graphic file (type png)
+<use Myimages/montecarlo_loss.png>
+Package pdftex.def Info: Myimages/montecarlo_loss.png  used on input line 133.
+(pdftex.def)             Requested size: 217.22205pt x 114.10521pt.
+<Myimages/sarsa_loss.png, id=28, 3806.22pt x 1999.47pt>
+File: Myimages/sarsa_loss.png Graphic file (type png)
+<use Myimages/sarsa_loss.png>
+Package pdftex.def Info: Myimages/sarsa_loss.png  used on input line 139.
+(pdftex.def)             Requested size: 217.22205pt x 114.10521pt.
+<Myimages/qlearning_loss.png, id=29, 3806.22pt x 1999.47pt>
+File: Myimages/qlearning_loss.png Graphic file (type png)
+<use Myimages/qlearning_loss.png>
+Package pdftex.def Info: Myimages/qlearning_loss.png  used on input line 145.
+(pdftex.def)             Requested size: 217.22205pt x 114.10521pt.
+<Myimages/loss_between_methods.png, id=30, 3806.22pt x 1999.47pt>
+File: Myimages/loss_between_methods.png Graphic file (type png)
+<use Myimages/loss_between_methods.png>
+Package pdftex.def Info: Myimages/loss_between_methods.png  used on input line 
+151.
+(pdftex.def)             Requested size: 217.22205pt x 114.10521pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+
+
+[3 <./Myimages/return_between_methods.png> <./Myimages/montecarlo_loss.png>]
+
+[4 <./Myimages/sarsa_loss.png> <./Myimages/qlearning_loss.png> <./Myimages/loss
+_between_methods.png>] (main.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 17133 strings out of 468130
+ 360344 string characters out of 5428212
+ 741514 words of memory out of 5000000
+ 45453 multiletter control sequences out of 15000+600000
+ 631588 words of font info for 58 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 131i,8n,135p,488b,399s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ivan_chang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb><C:/Users/ivan_chang/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmbx12.pfb><C:/Users/ivan_chang/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ivan_chang/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on main.pdf (4 pages, 4055441 bytes).
+PDF statistics:
+ 59 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+
