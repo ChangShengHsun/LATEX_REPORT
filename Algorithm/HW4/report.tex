@@ -1,0 +1,165 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+% Language and font packages
+% \usepackage{ctex} % Uncomment if using Chinese characters
+
+% Pseudocode packages - Chose algorithm2e for simplicity, removed conflict
+\usepackage[ruled,vlined]{algorithm2e} 
+
+% Fancy style packages
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{framed}
+
+% Math and symbol packages
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Table and figure packages
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Miscellaneous
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\title{Single's Inferno}
+\author{B13901165 Ivan Chang}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Background}
+During the welcome camp, NTUEE and NTUDFLL always work together to design the most engaging and innovative activities for freshmen. 
+One of the most crucial missions is to form the ultimate “teammate pairs.” Each student has their own unique personality, preferences, and compatibility level with others. 
+To avoid chaos, awkward silence, and the existential crisis of having no partner to hold a balloon with… we need a systematic and fair way to assign pairs.
+The question is: how can we find a pairing that satisfies all of the students? Does such a pairing exist?
+
+\section{Pairing Up Team Leaders} % Fixed Typo: Paring -> Pairing
+\subsection{Input Format}
+During the NTU welcome camp, every incoming group needs two team leaders to guide them through a series of thrilling activities. 
+There are $n$ male leaders and $n$ female leaders. Some pairs are known to be compatible, 
+meaning they can effectively collaborate as co-leaders.
+We model this as a bipartite graph:
+\begin{itemize}
+    \item The set of male leaders forms one partition. $M = \{m_1, m_2, \dots, m_n\}$ % Fixed formatting
+    \item The set of female leaders forms the other partition. $F = \{f_1, f_2, \dots, f_n\}$ % Fixed formatting
+    \item An edge exists between a male leader and a female leader if they are compatible.
+\end{itemize}
+
+\subsection{Input}
+First line: Two integers $n$ and $m$, where $n$ is the number of males and females (totally $2n$ leaders), and $m$ is the number of compatible pairs.\\
+Next $m$ lines: Each line contains two integers $u$ and $v$, indicating compatible pairs.
+
+\subsection{Solution} 
+This is a classic bipartite matching problem. We can use the Maximum Flow algorithm to find the maximum matching.
+We construct a flow network as follows:
+1. Create a directed graph $G' = (V', E')$(requires time complexity $O(E)$), where:
+\begin{itemize}
+    \item Create a source node $S$ and a sink node $T$.
+    \item Connect the source $S$ to each male leader $m_i$ with an edge of capacity 1.
+    \item Connect each female leader $f_j$ to the sink $T$ with an edge of capacity 1.
+    \item For each compatible pair $(m_i, f_j)$, create an edge from $m_i$ to $f_j$ with capacity 1.
+\end{itemize}
+2. Apply the Ford-Fulkerson algorithm to find the maximum flow from $S$ to $T$ in $G'$(requires time complexity $O(VE)$).\\
+3. If the maximum flow equals $n$, then a perfect matching exists
+and we can pair up all leaders. Otherwise, it's impossible to pair everyone up.
+
+\section{Now...... with preferences!}
+However, in reality. students have preferences for their teammates. For each students,
+they will score their possible teammates from 1 to n(n is the most preferred).
+But as the organizer, you want to make suer all the pairing is \textbf{stble}.
+A pairing is considered stable if there are no two leaders who would both prefer each other over their current partners.
+How can we find such a stable pairing?
+\subsection{Input Format}
+First line: An integer $n$, the number of male and female leaders (totally $2n$ leaders).\\
+Next $n$ lines: Each line contains $n$ integers representing the preference list of each male leader. 
+Next $n$ lines: Each line contains $n$ integers representing the preference list of each female leader.
+\subsection{Solution}
+We can use the \textbf{Gale-Shapley algorithm} to find a stable matching. The algorithm works as follows:
+\begin{enumerate}
+    \item Initialize all leaders as single.
+    \item Every male leader make a invitation to the most preferred female leader who has not yet rejected him.
+    \item Each female leader consider the invitation and the temporary teammates she has.
+    And choose the most preferred one. reject another.
+    \item Repeat steps 2 and 3 until all leaders are paired.
+\end{enumerate}
+Proofment: if there is an unstable pair (m, f) in the final matching, then m has proposed to f at some point (since he prefers f over his final partner).
+And f must have rejected m in favor of her final partner (since she prefers her final partner over m). This contradicts the assumption that (m, f) is an unstable pair.
+Therefore, All pairs are stble in the end through Gale-Shapley algorithm.
+\section{Pseudo Code}
+\begin{algorithm}[H]
+    \SetAlgoLined
+    \DontPrintSemicolon
+    \caption{Gale-Shapley (men-proposing version)}
+    \KwIn{Preference lists of all men and women}
+    \KwOut{A stable matching $M$ between men and women}
+
+    Initialize all men and women as \textbf{free}\;
+    \ForEach{man $m$}{
+        mark all women in $m$'s preference list as \textbf{not yet proposed}\;
+    }
+
+    $M \gets \emptyset$\;
+
+    \While{there exists a free man $m$ who has not proposed to every woman}{
+        Let $w$ be the highest-ranked woman on $m$'s list
+        to whom $m$ has not yet proposed\;
+        Mark that $m$ has now proposed to $w$\;
+
+        \uIf{$w$ is free}{
+            Match $m$ and $w$\;
+            $M \gets M \cup \{(m,w)\}$\;
+            Mark $m$ and $w$ as \textbf{engaged}\;
+        }
+        \Else{
+            Let $m'$ be $w$'s current partner in $M$\;
+            \eIf{$w$ prefers $m$ over $m'$}{
+                Replace $(m',w)$ by $(m,w)$ in $M$\;
+                Mark $m$ as \textbf{engaged} and $m'$ as \textbf{free}\;
+            }{
+                $m$ remains \textbf{free}\;
+            }
+        }
+    }
+    \Return $M$\;
+\end{algorithm}
+\subsection{time complexity}
+The time complexity of the Gale-Shapley algorithm is $O(n^2)$:
+\begin{itemize}
+    \item In Each iteration, at most n proposals are made by all men.
+    \item each man will propose to their posible teammates at most once.
+    \item Therefore, the total number of proposals is at most $n^2$.
+\end{itemize}
+
+\section{Blacklist}
+However, some students are \textbf{too} annoying for some others to accept them as teammates.
+To solve this, We modify the Definition of stability as follows:
+A pairing is considered stable if there are no two leaders who would both prefer each other over their current partners,
+and being single is also stable if other people are all in his/her blacklist.
+\subsection{Input Format}
+First line: An integer $n$, the number of male and female leaders (totally $2n$ leaders).\\
+Next $2n$ lines: Each line contains n integers representing the preference list. if a leader has blacklisted someone,
+the corresponding position in the preference list will be marked as 0.
+\subsection{Solution}
+We can modify the Gale-Shapley algorithm to account for blacklists:
+\begin{itemize}
+    \item All men will only propose to women who are not in their blacklist.
+    \item All women will only consider proposals from men who are not in their blacklist.
+\end{itemize}
+\end{document}

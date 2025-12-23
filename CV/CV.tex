@@ -1,0 +1,127 @@
+\documentclass[10pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=0.8in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{qrcode} % 自動生成 QR code
+\usepackage{array}
+
+% ---------- Formatting ----------
+\definecolor{sectionblue}{RGB}{0,94,180}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+
+% 修正後的 titleformat：確保顏色與樣式套用到所有 section
+\titleformat{\section}
+  {\color{sectionblue}\large\bfseries} % 1. 定義顏色與字體
+  {}                                   % 2. 標號（星號標題本身就沒標號，留空）
+  {0pt}                                % 3. 標號與標題間距
+  {}                                   % 4. 標題前置指令
+  [\color{sectionblue}\titlerule]      % 5. 標題下方橫線（也要記得上色）
+
+% 強制讓所有 section（包含帶星號的）都套用上述格式
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% ---------- Custom Commands ----------
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2 \\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item #1
+}
+
+% ---------- Document ----------
+\begin{document}
+
+% ===== Header =====
+\noindent
+% --- Left：Contact Information ---
+\begin{minipage}[b]{0.35\textwidth}
+    \flushleft
+    \small
+    \textbf{Email:} \href{mailto:ic046262@gmail.com}{ic046262@gmail.com} \\
+    \textbf{Phone:} +886-903-086-553 \\
+    \textbf{Links:} \href{https://github.com/ChangShengHsun}{GitHub} \quad \href{https://www.linkedin.com/in/ivanchangb13/}{LinkedIn}
+\end{minipage}
+% --- Middle：Name ---
+\begin{minipage}[b]{0.35\textwidth}
+    \centering
+    {\LARGE \textbf{Sheng-Hsun, Chang}}
+\end{minipage}
+% --- Right：QR Codes ---
+\begin{minipage}[b]{0.30\textwidth}
+    \flushright
+    \begin{tabular}{cc}
+        \qrcode[height=1.2cm]{https://github.com/ChangShengHsun} & 
+        \qrcode[height=1.2cm]{https://www.linkedin.com/in/ivanchangb13/} \\
+        \tiny GitHub & \tiny LinkedIn
+    \end{tabular}
+\end{minipage}
+
+\vspace{0.8em}
+\hrule
+\vspace{1em}
+% ===== Education =====
+\section*{Education}
+\resumeSubheading
+  {National Taiwan University}{Taipei, Taiwan}
+  {undergraduate in Electrical Engineering (GPA: 4.25/ 4.30)}{Sep 2024 -- Present}
+\begin{itemize}
+  \resumeItem{\textbf{Honors:} NTUEE Dean's List (Top Academic Excellence Award, 1st Semester)}
+\end{itemize}
+
+% ===== Project =====
+\section*{Projects}
+
+\resumeSubheading{RL course project - RecoveryDAgger}{Taipei, Taiwan}{Coordinator\&Co-developer}{Sep 2025 -- Dec 2025}
+\begin{itemize}
+  \resumeItem{Leading a team of 4 members to implement \textbf{RecoveryDAgger}, an imitation learning algorithm reducing expert queries.}
+  \resumeItem{Designed and developed the rule-based expert policy and the training pipeline using \textbf{Pytorch}. and \textbf{Stable Baselines3}.}
+  \resumeItem{Get 3rd place in the Final Project Presentation among 30 teams in the course (others are mainly graduate students).}
+\end{itemize}
+\resumeSubheading
+  {ESP32-Based Light Dance Communication}{Taipei, Taiwan}
+  {System Developer}{Summer 2025}
+\begin{itemize}
+  \resumeItem{Responsible for the development of a \textbf{real-time communication framework} utilizing the ESP32 microcontroller.}
+  \resumeItem{Achieved synchronized light control by implementing stable, low-latency data transfer protocols over \textbf{Wi-Fi}.}
+\end{itemize}
+
+% ===== Experience =====
+\section*{Experience}
+
+\resumeSubheading
+  {NTUEE LightDance Costume Design}{Taipei, Taiwan}
+  {Costume group member}{[Oct 2024 -- Mar 2025]}
+\begin{itemize}
+  \resumeItem{Engineered the complete electronic system for performance costumes, prioritizing \textbf{wearability and system stability}.}
+  \resumeItem{Designed and executed complex \textbf{LED wiring} and power routing integrated directly into the garment fabric.}
+  \resumeItem{Miniaturized and embedded the \textbf{controller and PCB} into the costume structure for a seamless, concealed finish.}
+\end{itemize}
+
+\resumeSubheading{EECS Annual Concert}{Taipei, Taiwan}{Host}{[Sep 2025 -- Nov 2025]}
+\begin{itemize}
+  \resumeItem{Selected as one of the main hosts for the prestigious \textbf{NTU EECS Annual Concert}, engaging an audience of over 100 attendees.}
+  \resumeItem{Demonstrated strong public speaking skills and stage presence, contributing to the event's overall success and positive feedback.}
+\end{itemize}
+
+% ===== Course =====%
+\textbf{ML related Courses:} Reinforcement Learning, Probability and Statistics and Algorithms \\
+
+% ===== Skills =====
+\section*{Technical Skills}
+\textbf{Languages:} C++, Python, C \\
+\textbf{Systems:} Embedded Systems (ESP32), Real-Time Processing, PCB Integration \\
+\textbf{ML / Algorithms:} Reinforcement Learning, Imitation Learning \\
+\textbf{Tools:} Git, Linux\\
+\textbf{Languages (Human):} Mandarin (Native), English (C1), French (A1)
+
+\end{document}
+

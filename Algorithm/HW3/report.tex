@@ -1,0 +1,133 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+% Language and font packages
+% \usepackage{ctex} % Chinese support
+
+% Pseudocode and algorithm packages
+\usepackage{algorithm2e} % Advanced algorithm writing
+\usepackage{algpseudocode} % Pseudocode environment for algorithms
+
+% Fancy style packages
+\usepackage{fancyhdr} % Custom headers/footers
+\usepackage{color} % Color support
+\usepackage{xcolor} % Extended color support
+\usepackage{tcolorbox} % Colored boxes
+\usepackage{framed} % Framed environments
+
+% Math and symbol packages
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Table and figure packages
+\usepackage{booktabs} % Professional tables
+\usepackage{multirow} % Multi-row tables
+\usepackage{caption} % Custom captions
+\usepackage{subcaption} % Subfigures
+
+% Miscellaneous
+\usepackage{enumitem} % Custom lists
+\usepackage{listings} % Code listings
+\usepackage{tikz} % Drawing diagrams
+\usepackage{pgfplots} % For plotting graphs
+
+\title{So bothering, everyone wants to take a course with me}
+\author{B13901165 Ivan Chang}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\section{Description}
+During the summer vacation, A large number of people become your nice buddy and you are namely \textbf{the core of the department}
+right now. Everyone wants to have the same course with you. But everyone is so annoying and they have different requirements.
+For example, Frankie states that I want a course with easy homework, If it does not, then at least the teacher must be handsome.
+Amber states that I want a course which is inspiring, If it does not, then at least it must locates at EE building NO.2.
+The question is: how can we find a course that satisfies all of the people? Does such a course exist?
+\section{Input}
+\subsection*{Input Format}
+
+We assume the course has $N$ attributes represented as a boolean array 
+(e.g., whether the homework is easy or not, whether the teacher is handsome or not, etc.).  
+Each attribute $x_i$ $(1 \le i \le N)$ can be either true or false.
+
+The input consists of $M$ requirements, each expressed as a disjunction of two literals.
+
+\begin{center}
+\begin{tabular}{l}
+\texttt{N M} \\
+\texttt{a\_1 b\_1} \\
+\texttt{a\_2 b\_2} \\
+$\vdots$ \\
+\texttt{a\_M b\_M}
+\end{tabular}
+\end{center}
+
+\noindent
+where:
+\begin{itemize}[leftmargin=1.5em]
+    \item $N$ --- the number of attributes.
+    \item $M$ --- the number of requirements (clauses).
+    \item Each pair $(a_i, b_i)$ represents one requirement $(\ell_{i1} \lor \ell_{i2})$.
+    \item If $a_i > 0$, it means literal $x_{a_i}$; if $a_i < 0$, it means $\lnot x_{|a_i|}$.
+    \item The same rule applies for $b_i$.
+\end{itemize}
+
+\noindent
+In other words, the overall condition can be written as:
+\[
+(\ell_{11} \lor \ell_{12}) \land (\ell_{21} \lor \ell_{22}) \land \dots \land (\ell_{M1} \lor \ell_{M2})
+\]
+and you need to determine whether there exists a truth assignment for all $x_i$ that satisfies every clause.
+
+\section{solution}
+The problem is actually the well-known 2-SAT problem. To begin with
+\begin{enumerate}
+    \item For a clause $(a \lor b)$, it is equivalent to $(\neg a \rightarrow b) \land (\neg b \rightarrow a)$.
+    \item Therefore, we can build a directed graph $G$ with $2N$ nodes, each variable $x_i$ has two nodes: $2i$ for positive and $2i+1$ for negative.
+    \item For each clause $(a \lor b)$, we add two directed edges $\neg a \rightarrow b$ and $\neg b \rightarrow a$ to the graph.
+    \item After the cnstruction of the graph, we compute the SCCs of the graph.
+    \item If for any variable $x_i$, both nodes $2i$ and $2i+1$ belong to the same SCC, then the 2-SAT instance is unsatisfiable.
+    (since it implies that $x_i$ must be both true and false).
+\end{enumerate}
+\section{pseudo code}
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwIn{$N$ (number of variables), $M$ (number of clauses), each clause $(a_i, b_i)$}
+\KwOut{Whether there exists a satisfying assignment}
+
+Build a directed graph $G$ with $2N$ nodes\;
+\For{$i \gets 1$ \KwTo $M$}{
+    read $a, b$\;
+    $u \gets \text{node}(a)$\;
+    $v \gets \text{node}(b)$\;
+    add edge $\neg u \rightarrow v$ to $G$\;
+    add edge $\neg v \rightarrow u$ to $G$\;
+}
+Compute strongly connected components (SCC) of $G$\;
+\For{$i \gets 0$ \KwTo $N-1$}{
+    \If{$\text{SCC}(2i) == \text{SCC}(2i+1)$}{
+        \Return NO\;
+    }
+}
+\Return YES\;
+\caption{2-SAT satisfiability checking}
+\end{algorithm}
+\subsection{time complexity}
+To build the graph $G$, we need to process $M$ clauses, each adding two edges, resulting in $O(M)$ time.\\
+Computing SCC requires $O(N + M)$ time since we have $2N$ nodes and $2M$ edges. and DFS requires $O(N + M)$ time as well.\\
+Finally, checking each variable for conflicts takes $O(N)$ time.\\
+Overall, the time complexity of the algorithm is \textbf{$O(N + M)$}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image.png}
+    \caption{something for fun}
+    \label{fig:2sat}
+\end{figure}
+\end{document}
