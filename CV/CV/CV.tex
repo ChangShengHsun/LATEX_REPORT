@@ -28,9 +28,9 @@
 \titlespacing{\section}{0pt}{8pt}{4pt}
 
 % ---------- Custom Commands ----------
-\newcommand{\resumeSubheading}[4]{
-  \textbf{#1} \hfill #2 \\
-  \textit{#3} \hfill \textit{#4}
+\newcommand{\resumeSubheading}[3]{%
+  \textbf{#1} \hfill \textit{#3}\\
+  \textit{#2}%
 }
 
 \newcommand{\resumeItem}[1]{
@@ -64,56 +64,57 @@
         \tiny GitHub & \tiny LinkedIn
     \end{tabular}
 \end{minipage}
-
-\vspace{0.8em}
-\hrule
-\vspace{1em}
 % ===== Education =====
 \section*{Education}
 \resumeSubheading
-  {National Taiwan University}{Taipei, Taiwan}
-  {undergraduate in Electrical Engineering (GPA: 4.25/ 4.30)}{Sep 2024 -- Present}
+  {National Taiwan University}
+  {Undergraduate in Electrical Engineering (GPA: 4.25/ 4.30)}{Sep 2024 -- Present}
 \begin{itemize}
   \resumeItem{\textbf{Honors:} NTUEE Dean's List (Top Academic Excellence Award, 1st Semester)}
+\end{itemize}
+\resumeSubheading
+  {Taipei Municipal Chien Kuo High School}
+  {Math and Science Gifted Class}{Sep 2021 -- Jun 2024}
+\begin{itemize}
+  \resumeItem{\textbf{Honors:} graduated top of the school, (1/900+ students)}
 \end{itemize}
 
 % ===== Project =====
 \section*{Projects}
 
-\resumeSubheading{RL course project - RecoveryDAgger}{Taipei, Taiwan}{Coordinator\&Co-developer}{Sep 2025 -- Dec 2025}
+\resumeSubheading{RL final project - RecoveryDAgger}{Co-developer}{Sep 2025 -- Dec 2025}
+\small\href{https://github.com/NTU-RL2025-02/RecoveryDAgger}{GitHub Repository}
+\normalsize
 \begin{itemize}
   \resumeItem{Leading a team of 4 members to implement \textbf{RecoveryDAgger}, an imitation learning algorithm reducing expert queries.}
   \resumeItem{Designed and developed the rule-based expert policy and the training pipeline using \textbf{Pytorch}. and \textbf{Stable Baselines3}.}
   \resumeItem{Get 3rd place in the Final Project Presentation among 30 teams in the course (others are mainly graduate students).}
 \end{itemize}
 \resumeSubheading
-  {ESP32-Based Light Dance Communication}{Taipei, Taiwan}
+  {ESP32-Based Light Dance Communication}
   {System Developer}{Summer 2025}
 \begin{itemize}
-  \resumeItem{Responsible for the development of a \textbf{real-time communication framework} utilizing the ESP32 microcontroller.}
-  \resumeItem{Achieved synchronized light control by implementing stable, low-latency data transfer protocols over \textbf{Wi-Fi}.}
+  \resumeItem{Developed a \textbf{real-time communication framework} utilizing the ESP32 microcontroller.}
+  \resumeItem{Achieved synchronized light control by implementing low-latency data transfer protocols over \textbf{Wi-Fi}.}
 \end{itemize}
 
 % ===== Experience =====
 \section*{Experience}
 
 \resumeSubheading
-  {NTUEE LightDance Costume Design}{Taipei, Taiwan}
+  {NTUEE LightDance Costume Design}
   {Costume group member}{[Oct 2024 -- Mar 2025]}
 \begin{itemize}
-  \resumeItem{Engineered the complete electronic system for performance costumes, prioritizing \textbf{wearability and system stability}.}
-  \resumeItem{Designed and executed complex \textbf{LED wiring} and power routing integrated directly into the garment fabric.}
-  \resumeItem{Miniaturized and embedded the \textbf{controller and PCB} into the costume structure for a seamless, concealed finish.}
+  \resumeItem{Engineered the complete electronic system for light dance performance costumes, prioritizing \textbf{wearability and system stability}.}
+  \resumeItem{Designed and executed \textbf{LED wiring} and power routing integrated directly into the garment fabric.}
+  \resumeItem{Miniaturized and embedded the \textbf{controller and PCB} into the costume structure.}
 \end{itemize}
 
-\resumeSubheading{EECS Annual Concert}{Taipei, Taiwan}{Host}{[Sep 2025 -- Nov 2025]}
+\resumeSubheading{EECS Annual Concert}{Host}{[Sep 2025 -- Nov 2025]}
 \begin{itemize}
   \resumeItem{Selected as one of the main hosts for the prestigious \textbf{NTU EECS Annual Concert}, engaging an audience of over 100 attendees.}
   \resumeItem{Demonstrated strong public speaking skills and stage presence, contributing to the event's overall success and positive feedback.}
 \end{itemize}
-
-% ===== Course =====%
-\textbf{ML related Courses:} Reinforcement Learning, Probability and Statistics and Algorithms \\
 
 % ===== Skills =====
 \section*{Technical Skills}

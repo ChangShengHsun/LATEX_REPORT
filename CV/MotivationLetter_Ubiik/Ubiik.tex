@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{parskip} % space between paragraphs, no indent
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{fontawesome5} % icons
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% ---------- Formatting ----------
+\setstretch{1.08}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+
+% ---------- Your info (from CV) ----------
+\newcommand{\Name}{Sheng-Hsun Chang}
+\newcommand{\Email}{\href{mailto:ic046262@gmail.com}{ic046262@gmail.com}}
+\newcommand{\Phone}{+886-903-086-553}
+% Replace with your actual URLs:
+\newcommand{\GitHub}{\href{https://github.com/}{GitHub}}
+\newcommand{\LinkedIn}{\href{https://www.linkedin.com/}{LinkedIn}}
+
+\begin{document}
+
+% ---------- Header ----------
+{\LARGE \textbf{\Name}}\\
+Undergraduate, Electrical Engineering, National Taiwan University\\
+\vspace{2pt}
+\faEnvelope\ \Email \quad
+\faPhone\ \Phone \quad
+\faGithub\ \GitHub \quad
+\faLinkedin\ \LinkedIn
+
+\vspace{14pt}
+
+% ---------- Date + Recipient ----------
+\textbf{Date:} \today\\
+\textbf{To:} Hiring Team, Ubiik\\
+\textbf{Subject:} Motivation Letter --- R\&D Internship (Jun 15 -- Aug 31, 2026)
+
+
+\vspace{10pt}
+\hrule
+Dear Hiring Team:
+
+I am writing to apply for the R\&D Internship position at Ubiik. 
+I am currently an undergraduate student pursuing a degree in Electrical Engineering at 
+National Taiwan University, where I have developed a strong academic foundation alongside 
+hands-on experience in software and system-oriented projects. I am particularly interested in 
+Ubiik's focus on telecommunication, where careful analysis, verification, and optimization are crucial
+for real-world solutions.
+
+My project experience in reinforcement learning has equipped me with a solid programming foundation. 
+During the RL project, despite the project scope being revised twice, I actively collaborated with my teammates to identify and resolve the emerging challenges. Through this process, I developed strong proficiency in Python, PyTorch, and Stable Baselines3, 
+as well as hands-on experience debugging complex learning systems. 
+This experience strengthened my ability to decompose ambiguous problems into concrete, manageable objectives and address them iteratively. 
+Ultimately, our team achieved \textbf{third place} in the final project presentation among 30 teams, most of which were composed of \textbf{graduate students}.
+
+Besides course projects, I also participated in the NTUEE Light Dance project, 
+a large-scale program which integrates software development, embedded systems, 
+and real-world performance constraints. I was involved in the design of wearable lighting costumes, 
+where I had to balance wearability with system stability and reliability. Also, I participated in the follow-up 
+improvement for the ESP32-based real-time communication system. During the event, I got to know how to deliver 
+solutions under physical constraints.
+
+I am also a member of the Industry Department within the student association.
+By conducting regular interviews with senior students and professors, I gained a deeper understanding of current 
+industry trends while honing my presentation and communication skills. In sharing these insights with freshmen, 
+I further developed my ability to convey complex concepts clearly and accessibly.
+
+To conclude, I would like to contribute my technical skills and collaborative experience to the 
+R\&D Internship at Ubiik. I'm open to the opportunity to contiunue the internship in Taiwan after the summer overseas period subject to coordination 
+with my academic schedule. Thank you for your time and consideration.
+
+Sincerely,\\
+\vspace{10pt}
+\Name
+
+
+\end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.12)  23 DEC 2025 21:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.12)  24 DEC 2025 17:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -439,13 +439,8 @@ previously calculated.>
 <Copying the QR code for "https://www.linkedin.com/in/ivanchangb13/" in version
  3-M as previously calculated.>
 
-Overfull \hbox (4.45177pt too wide) in paragraph at lines 44--67
+Overfull \hbox (4.45177pt too wide) in paragraph at lines 44--68
 [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
  []
 
 
@@ -470,7 +465,7 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
 Here is how much of TeX's memory you used:
  11745 strings out of 468130
  181273 string characters out of 5428212
- 711706 words of memory out of 5000000
+ 710699 words of memory out of 5000000
  40259 multiletter control sequences out of 15000+600000
  629632 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -485,9 +480,9 @@ an_chang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb>
 <C:/Users/ivan_chang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmr9.pfb><C:/Users/ivan_chang/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb>
-Output written on CV.pdf (1 page, 119299 bytes).
+Output written on CV.pdf (1 page, 122038 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

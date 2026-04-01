@@ -1,0 +1,87 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{Electronics Experiment Report:}
+\author{B13901165張勝勛, B13901020陳諺德}
+\date{\today}
+
+% Language and font packages
+\usepackage{ctex} % Chinese support
+
+% Pseudocode and algorithm packages
+% \usepackage{algorithm2e} % Advanced algorithm writing
+% \usepackage{algpseudocode} % Pseudocode environment for algorithms
+
+% Fancy style packages
+\usepackage{fancyhdr} % Custom headers/footers
+\usepackage{color} % Color support
+\usepackage{xcolor} % Extended color support
+\usepackage{tcolorbox} % Colored boxes
+\usepackage{framed} % Framed environments
+
+% Math and symbol packages
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Table and figure packages
+% \usepackage{booktabs} % Professional tables
+% \usepackage{multirow} % Multi-row tables
+% \usepackage{caption} % Custom captions
+\usepackage{subcaption} % Subfigures
+
+% Miscellaneous
+\usepackage{enumitem} % Custom lists
+\usepackage{listings} % Code listings
+\usepackage{tikz} % Drawing diagrams
+\usepackage{pgfplots} % For plotting graphs
+\usepackage{float}
+
+\begin{document}
+\renewcommand{\figurename}{圖}
+\maketitle
+
+\section{Experiment setup}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{exp_setup.png}
+    \caption{Experiment setup}
+    \label{fig:example}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Parameter & Value \\
+        \hline
+        $V_{DD}$ & 15V \\
+        $R_{G1}$, $R_{G2}$ & 1M$\Omega$ \\
+        $R_D$, $R_S$, $R_L$ & 10k$\Omega$ \\
+        $R_{sig}$ & 10k$\Omega$ \\
+        $C_{C2}$, $C_S$ & 0.1$\mu$F(104) \\
+        $C_{C1}$ & 0.01$\mu$F(103) \\
+        $V_{sig}$ & 200mV (AC) \\
+        Frequency & 200Hz to 500kHz \\
+        \hline
+    \end{tabular}
+    \caption{Experiment Parameters}
+    \label{tab:parameters}
+\end{table}
+
+
+\section{Section 2}
+\subsection{subsection 2-1}
+\subsection{subsection 2-2}
+\section{Section 3}
+\subsection{subsection 3-1}
+\subsection{subsection 3-2}
+
+\end{document}
